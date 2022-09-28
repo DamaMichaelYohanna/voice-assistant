@@ -3,12 +3,21 @@ import webbrowser
 import pyttsx3 as pyt
 
 engine = pyt.init()
+
 def open_browser():
     print("am going to open the browser")
     webbrowser.open("google.com")
 
 def play_music():
     print("am going to play music")
+    
+
+def search_ofline():
+    pass
+    
+
+def search_online():
+    pass
     
 def main():
     engine.say("hello")
@@ -19,9 +28,8 @@ def main():
         elif command == "play music":
             play_music()
         elif command == "search ofline":
-            pass
+            search_ofline()
         elif command == "search online":
-            pass
-        pass
+            search_online()
 
 
